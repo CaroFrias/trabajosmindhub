@@ -1,0 +1,95 @@
+/*----ASPECTOS GENERALES----*/
+* {
+    font-family: cursive;
+}
+
+/*----CONTENEDOR PADRE-MADRE es flexbox APLICADO A DIV DENTRO DE HEADER----*/
+
+.contenedor_flex{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;  
+}
+/* --------------------Cabecera----------------*/
+/*Título*/
+.titulo1{
+
+    color: white;
+    
+    padding-left: 15px;
+    text-align: left;
+    font-size: 3.5em;
+}
+/*Imagen de fondo*/
+.cabecera1{
+    background-image: url(../Images/design1_image1.jpg);
+    background-size: cover;
+    width: auto;
+    height: 700px;
+}
+/*Upcoming events*/
+.cabecera2 {
+    text-align: center;
+    color: white;
+    font-size: 2.0em;
+    
+    width: auto;
+    
+    background-color: black;
+}
+
+/*logo*/
+.logo {
+    position: absolute; /* Despega el elemento de la capa que lo contenía - en esta sección me costó mucho alinearlo respetando los flex porque le había dado medidas mal*/
+  
+    margin-top: -13%;
+    margin-left: 70%; /*Creo que sólo hay que dale las medidas del top o left porque su centro va a estar dado por los contenedores y cómo yo los voy a ordenar, en mi caso "column"*/
+}
+/*---------------------CONTENEDOR IZQUIERDA-LISTA------------------*/
+.contenedor_flex_izquierdo{
+
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+
+    float: left;/*Esto no sé porque hace que el siguiente bloque se ponga a la derecha, en mi caso el div de  "cuerpo1"*/
+
+    font-size: 1.5em;
+
+    padding-right: 5%;
+
+    
+    width: 15%; /*Cuando están bien alineados las box, dividir el 100% de la página y se acoplan con las demás cajas*/
+    }
+.contenedor_flex_izquierdo li{
+        
+    list-style: none;
+    text-align: center;
+    padding: 10%; /*APLICA A LOS 4 LADOS*/
+}
+
+/*-------CUERPO----------*/
+
+.cuerpo5{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    float: left;
+
+    text-align: left;
+
+    padding-left: 10%;
+
+    width: 50%;
+
+} /*hasta que no hice un contenedor con el cuerpo 5 no se organizó el contenido de la lista.*/
+body h3,h4,h5 {
+    text-align: center;
+    
+
+}
+
+#ml1 {
+    list-style: square;  
+}
+
